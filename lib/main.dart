@@ -109,6 +109,12 @@ class _MyHomePageState extends State<MyHomePage> {
               'Hola a todos FlutterConf',
               style: TextStyle(color: Colors.blue, fontSize: 25),
             ),
+            Center(
+              child: Image.asset(
+                'assets/dash.png',
+                height: 200,
+              ),
+            ),
             const Text(
               'You have pushed the button this many times:',
             ),
