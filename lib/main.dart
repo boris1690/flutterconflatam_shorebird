@@ -105,7 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
+            /* const Text(
               'Hola a todos FlutterConf',
               style: TextStyle(color: Colors.blue, fontSize: 25),
             ),
@@ -114,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 'assets/dash.png',
                 height: 200,
               ),
-            ),
+            ), */
             const Text(
               'You have pushed the button this many times:',
             ),
