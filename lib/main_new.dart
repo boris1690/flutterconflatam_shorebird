@@ -55,7 +55,7 @@ class MyApp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Text(
-                    'Colombisa',
+                    'Colombia',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
