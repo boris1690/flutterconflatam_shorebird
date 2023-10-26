@@ -21,36 +21,18 @@ class MyApp extends StatelessWidget {
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Container(
-                height: MediaQuery.of(context).size.height * .3,
+              SizedBox(
+                height: MediaQuery.of(context).size.height * .2,
                 child: Stack(
                   children: [
-                    const Align(
-                      alignment: Alignment.topCenter,
-                      child: Stack(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(left: 10, top: 10),
-                            child: Icon(
-                              Icons.close,
-                              color: Color(0xffC3C3C3),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
                     Align(
-                      alignment: Alignment.bottomCenter,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Container(
-                            child: Image.asset(
-                              'assets/icon.png',
-                              height: 200,
-                            ),
+                          Image.asset(
+                            'assets/icon.png',
+                            height: 120,
                           ),
                         ],
                       ),
@@ -58,17 +40,22 @@ class MyApp extends StatelessWidget {
                   ],
                 ),
               ),
-              Center(
-                child: Text(
-                  'Conferencia más esperada en LATAM.',
-                  style: TextStyle(fontSize: 25, color: Colors.blue),
+              Align(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      'assets/dash.gif',
+                      height: 150,
+                    ),
+                  ],
                 ),
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Text(
-                    'Colombia',
+                    'Colombisa',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
@@ -112,12 +99,12 @@ class MyApp extends StatelessWidget {
                 ],
               ),
               Container(
-                color: Color(0xffF8F8F8),
+                color: const Color(0xffF8F8F8),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 16.0),
+                    const Padding(
+                      padding: EdgeInsets.only(bottom: 16.0),
                       child: Column(
                         children: [
                           Text('Speakers'),
@@ -138,8 +125,8 @@ class MyApp extends StatelessWidget {
                       width: 1,
                       color: Colors.black,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 16.0, top: 20),
+                    const Padding(
+                      padding: EdgeInsets.only(bottom: 16.0, top: 20),
                       child: Column(
                         children: [
                           Text('Followers'),

@@ -1,4 +1,5 @@
-# name: Patch an APK using Shorebird
+name: Patch an APK using Shorebird
+
 on:
   push:
     branches: [main]
